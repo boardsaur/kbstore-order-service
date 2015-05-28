@@ -1,2 +1,2 @@
-# acme-order-service
-Acme Order Service
+# kbstore-order-service
+Keyboard Store Order Service
