@@ -21,7 +21,7 @@ case class Order(number: String, customer: String, item: String)
 
 
 trait Protocols extends DefaultJsonProtocol {
-  implicit val orderFormat =jsonFormat2(Order.apply)
+  implicit val orderFormat =jsonFormat3(Order.apply)
 }
 
 trait Service extends Protocols {

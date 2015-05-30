@@ -1,8 +1,9 @@
 enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+name         := """kbstore-order-service"""
+organization := "com.boardsaur"
+version      := "1.0" + sys.env.get("BUILD_NUMBER").map(nbr => s".$nbr").getOrElse("")
 
-name         := """order-service"""
-organization := "com.kbstore"
-version      := "1.0"
 scalaVersion := "2.11.5"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
